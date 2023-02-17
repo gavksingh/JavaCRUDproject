@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.error{
+    	color: red;
+        font-style: italic;
+}
+
+label[id*='fname']::after {content: "*"; color:red;} 
+
+.form-row{
+	display: flex;
+	height: 100%;
+}
+.navbar{
+	align-items: center;
+	padding: 50px;
+}
+
+.heading{
+	font-size: 35px;
+	
+}
+label {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  margin-bottom: 2px;
+  display: block; }
+
+
+.one-line{
+	display: flex;
+	margin: 0 -10px;
+	/* padding: 0 5px; */
+	}
+	.one-line .form-group{
+	width: 100%;
+	padding: 0 10px 0px;
+	}
+h3{
+	color: white;
+	font-weight: 600;
+	line-height: 1.66;                  
+}
+.form-radio {
+  margin-bottom: 30px;
+  
+   }
+  .form-radio input {
+    width: auto;
+    display: inline-block; }
+
+.radio-label {
+  padding-right: 30px; }
+
+.form-radio-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  /* line-height: 1.5; */
+   }
+  .form-radio-item label {
+    font-weight: 500;
+    font-size: 13px;
+    
+    padding-left: 25px;
+    position: relative;
+    z-index: 9;
+    display: block;
+    cursor: pointer; }
+
+.check {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  top: 3px;
+  left: 1px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear; }
+  .check:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear; }
+
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden; }
+  input[type=radio]:checked ~ .check {
+    border: 1px solid #ff6801; }
+  input[type=radio]:checked ~ .check::before {
+    background: #ff6801; }
+    
+ 
+input, select, textarea {
+  outline: none;
+  appearance: unset !important;
+  -moz-appearance: unset !important;
+  -webkit-appearance: unset !important;
+  -o-appearance: unset !important;
+  -ms-appearance: unset !important; } 
+  
+input[type=number] {
+  -moz-appearance: textfield !important;
+  appearance: none !important;
+  -webkit-appearance: none !important; }    
+    
+
+input[type=radio] {
+  appearance: radio !important;
+  -moz-appearance: radio !important;
+  -webkit-appearance: radio !important;
+  -o-appearance: radio !important;
+  -ms-appearance: radio !important; }
